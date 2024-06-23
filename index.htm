@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sopa de Letras - Muro de Berlín</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #game-container {
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        td {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid #000;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        #word-list {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Sopa de Letras - Muro de Berlín</h1>
+        <table id="sopa"></table>
+        <div id="word-list">
+            <h3>Palabras a encontrar:</h3>
+            <ul id="words">
+                <li>Berlín</li>
+                <li>Muro</li>
+                <li>Guerra</li>
+                <li>Fría</li>
+                <li>Alemania</li>
+                <li>Oriental</li>
+                <li>Occidental</li>
+                <li>Caída</li>
+                <li>1989</li>
+                <li>Libertad</li>
+            </ul>
+        </div>
+    </div>
+    <script src="sopa.js"></script>
+</body>
+</html>
